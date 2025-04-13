@@ -1,74 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discord Webhook Sender</title>
-  <meta name="author" content="Zua">
-  <meta name="description" content="Simple Discord Webhook Spammer">
-  <meta name="keywords" content="discord,ytzmo,webhook, webhook spam, webhook spammer">
-  <meta name="title" content="Discord Webhook Spammer">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1 {
-      font-size: 2em;
-      text-align: center;
-    }
-
-    input {
-      font-size: 1em;
-      margin: 10px 0;
-      padding: 5px;
-      width: 100%;
-    }
-
-    button {
-      font-size: 1em;
-      padding: 10px;
-      background-color: #fff;
-      color: #000;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #ccc;
-    }
-
-    #container {
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    #log {
-      font-size: 0.9em;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <div id="header">
-    <h1>Discord Webhook Spammer</h1>
-  </div>
-  <div id="container">
-    <div class="center-align">
-      <input type='text' id="link" placeholder="Webhook URL :">
-      <input type="text" id="username" placeholder="Bot Username :">
-      <input type="text" id="avatar" placeholder="Avatar URL :">
-      <input type="text" id="content" placeholder="Message :">
-      <button id="btn">Spam</button>
-      <p id='log'></p>
-    </div>
-  </div>
+  <header>
+    <h1>Discord Webhook Sender</h1>
+    <img src="https://via.placeholder.com/150" alt="Logo" id="logo">
+  </header>
+  <main>
+    <section id="form-container">
+      <form>
+        <input type="url" id="link" placeholder="Webhook URL">
+        <input type="text" id="username" placeholder="Bot Username">
+        <input type="url" id="avatar" placeholder="Avatar URL">
+        <textarea id="content" placeholder="Message"></textarea>
+        <button id="btn" type="button">Send</button>
+      </form>
+      <p id="log"></p>
+    </section>
+  </main>
+  <footer>
+    <p>Developed by <a href="https://unknownzop.github.io" target="_blank">Unknownz</a></p>
+  </footer>
   <script src="jquery.js"></script>
   <script src="main.js"></script>
 </body>
