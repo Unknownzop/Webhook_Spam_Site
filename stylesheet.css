@@ -21,81 +21,53 @@ body {
 }
 
 /* Header Styling */
-#header {
+header {
   text-align: center;
-  margin-top: 47px;
-  font-size: 39px;
-  color: rgb(255, 255, 255);
+  margin: 20px auto;
 }
 
-/* Logo */
-#logo {
-  display: block;
-  margin: 10px auto;
-  width: 100px;
-  height: auto;
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-/* Container Styling */
-#container {
-  background-color: rgba(0, 0, 0, 0.8); /* Added fallback for the container background */
-  border: 2px solid #838383c9;
+/* Form Container */
+#form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
   border-radius: 10px;
+  padding: 20px;
   width: 90%;
   max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: auto;
 }
 
-/* Center Alignment Class */
-.center-align {
-  text-align: center;
-}
-
-/* Text Styling */
-p {
-  font-size: 27px;
-}
-
-/* Input Fields */
-#link,
-#username,
-#content,
-#avatar {
-  font-size: 18px; /* Reduced font size for better readability */
-  background-color: #000000;
-  color: #fff;
-  width: 90%; /* Fixed width alignment */
+input,
+textarea,
+button {
+  width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 2px solid #838383c9;
+  font-size: 1rem;
+  border: 1px solid #838383c9;
   border-radius: 5px;
+  background-color: #000;
+  color: #fff;
 }
 
-/* Button Styling */
-#btn {
-  width: 50%;
-  font-size: 20px;
-  color: #838383c9;
-  margin-top: 25px;
-  padding: 10px;
-  background-color: #000000;
-  border: 2px solid #838383c9;
-  border-radius: 5px;
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Log Message */
-#log {
-  font-size: 16px;
-  color: #aaa;
-  margin-top: 15px;
+button:hover {
+  background-color: #ccc;
 }
 
 /* Footer Styling */
@@ -114,4 +86,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-  }
+}
