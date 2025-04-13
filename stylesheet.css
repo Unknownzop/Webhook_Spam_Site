@@ -1,4 +1,4 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
   font-family: "Arial Black", Gadget, sans-serif;
 }
 
-/* Body */
+/* Body Styling */
 body {
   background: url("https://w.wallhaven.cc/full/6q/wallhaven-6qx916.png") no-repeat center center fixed;
   background-size: cover;
@@ -20,74 +20,98 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
-header {
+/* Header Styling */
+#header {
   text-align: center;
-  margin: 20px auto;
+  margin-top: 47px;
+  font-size: 39px;
+  color: rgb(255, 255, 255);
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
+/* Logo */
 #logo {
-  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
   width: 100px;
   height: auto;
 }
 
-/* Form Container */
-#form-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid #fff;
+/* Container Styling */
+#container {
+  background-color: rgba(0, 0, 0, 0.8); /* Added fallback for the container background */
+  border: 2px solid #838383c9;
   border-radius: 10px;
-  padding: 20px;
   width: 90%;
   max-width: 400px;
-  margin: auto;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-input,
-textarea,
-button {
-  width: 100%;
+/* Center Alignment Class */
+.center-align {
+  text-align: center;
+}
+
+/* Text Styling */
+p {
+  font-size: 27px;
+}
+
+/* Input Fields */
+#link,
+#username,
+#content,
+#avatar {
+  font-size: 18px; /* Reduced font size for better readability */
+  background-color: #000000;
+  color: #fff;
+  width: 90%; /* Fixed width alignment */
   padding: 10px;
   margin: 10px 0;
-  font-size: 1rem;
-  border: 1px solid #838383c9;
+  border: 2px solid #838383c9;
   border-radius: 5px;
-  background-color: #000;
-  color: #fff;
 }
 
-textarea {
-  resize: none;
-}
-
-button {
-  background-color: #fff;
-  color: #000;
+/* Button Styling */
+#btn {
+  width: 50%;
+  font-size: 20px;
+  color: #838383c9;
+  margin-top: 25px;
+  padding: 10px;
+  background-color: #000000;
+  border: 2px solid #838383c9;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #ccc;
+#btn:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-/* Footer */
+/* Log Message */
+#log {
+  font-size: 16px;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+/* Footer Styling */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
   text-align: center;
+  color: #fff;
 }
 
 footer a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
+  }
