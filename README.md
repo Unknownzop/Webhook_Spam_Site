@@ -1,6 +1,6 @@
 # 🚨 Webhook Spam Site
 
-A simple HTML-based site designed to send repeated messages to a Discord webhook. Built with basic frontend technologies for demonstration or educational purposes.
+An open source simple HTML-based site designed to send repeated messages to a Discord webhook. Built with basic frontend technologies for demonstration or educational purposes.
 
 > ⚠️ **Disclaimer**: This project is intended for educational use only. Spamming webhooks violates Discord's Terms of Service and can result in bans or legal consequences. Use responsibly.
 
